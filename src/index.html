@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Yale</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,44 +30,21 @@
   </head>
   <body
     x-data="{selected: null}"
-    class="relative h-fit bg-olive-100 px-10 pb-20 font-sans text-gray-500 sm:px-28 sm:text-lg lg:px-36 xl:px-48 2xl:px-60"
+    class="relative h-screen bg-olive-100 px-10 pb-20 font-sans text-gray-500 sm:px-28 sm:text-lg lg:px-36 xl:px-44"
   >
     <header
-      class="relative rounded-lg rounded-t-none bg-bluegray-100 px-12 py-3"
+      class="relative rounded-lg rounded-t-none bg-bluegray-100 px-9 py-5"
     >
       <ul class="relative flex items-center justify-between">
         <li
-          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50"
+          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50 hover:cursor-pointer hover:bg-yellow-100"
         >
-          <img src="/src/img/journals.svg" alt="journals" /><span
-            class="adhd-text"
-            >Journals</span
+          <img src="/src/img/home.svg" alt="home" /><span class="adhd-text"
+            >Home</span
           >
         </li>
         <li
-          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50"
-        >
-          <img src="/src/img/products.svg" alt="products" /><span
-            class="adhd-text"
-            >Products</span
-          >
-        </li>
-        <li
-          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50"
-        >
-          <img src="/src/img/events.svg" alt="events" /><span class="adhd-text"
-            >Events</span
-          >
-        </li>
-        <li
-          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50"
-        >
-          <img src="/src/img/team.svg" alt="team" /><span class="adhd-text"
-            >Our Team</span
-          >
-        </li>
-        <li
-          class="relative flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50"
+          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-100"
         >
           <img src="/src/img/about.svg" alt="about" /><span class="adhd-text"
             >About Us</span
@@ -79,11 +56,40 @@
           </div>
         </li>
         <li
-          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50"
+          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50 hover:cursor-pointer hover:bg-yellow-100"
         >
-          <img src="/src/img/contact.svg" alt="contact" /><span
+          <img src="/src/img/apply.svg" alt="apply" /><span class="adhd-text"
+            >Apply</span
+          >
+        </li>
+        <li
+          class="relative flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50 hover:cursor-pointer hover:bg-yellow-100"
+        >
+          <img src="/src/img/exhibitions.svg" alt="exhibitions" /><span
             class="adhd-text"
-            >Contact Us</span
+            >Exhibitions</span
+          >
+        </li>
+        <li
+          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50 hover:cursor-pointer hover:bg-yellow-100"
+        >
+          <img src="/src/img/publications.svg" alt="publications" /><span
+            class="adhd-text"
+            >Publications</span
+          >
+        </li>
+        <li
+          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50 hover:cursor-pointer hover:bg-yellow-100"
+        >
+          <img src="/src/img/news.svg" alt="news" /><span class="adhd-text"
+            >News</span
+          >
+        </li>
+        <li
+          class="flex h-24 w-32 flex-col items-center justify-center rounded-lg bg-yellow-50 hover:cursor-pointer hover:bg-yellow-100"
+        >
+          <img src="/src/img/events.svg" alt="events" /><span class="adhd-text"
+            >Public Events</span
           >
         </li>
       </ul>
@@ -100,24 +106,12 @@
           class="absolute z-50 mt-1 rounded-lg border-2 border-olive-500 bg-white py-4 px-7"
         >
           <div>
-            <p class="mt-3">
-              This menu style takes inspiration from the official Apple website
-              the link to which you can find here:
-              <a
-                class="underline underline-offset-4"
-                href="https://www.apple.com/uk/iphone/"
-                >https://www.apple.com/uk/iphone/</a
-              >
-            </p>
             <p>
-              The icons are all minimalist and intuitive, this in turn ensures
-              that users are able to manipulate the website with greater ease.
-              The simple navigation structure does not rely on a global search
-              function and does not contain a menu within a menu. Users can see
-              the resources they have access to from first glance and without
-              having to dig through multiple tabs. The arrow below the menu
-              ensures that users can hide the menu bar as it can prove to be a
-              distraction to those with ADHD.
+              This menu bar on the official website is positioned on the left
+              hand-side with no icons. In the ADHD accessible version of this
+              website there is an icon representing each page. In addition to
+              this, there is a button below that allows the user to hide the
+              menu bar as it can serve as a distraction.
             </p>
           </div>
           <button
@@ -133,11 +127,16 @@
     </header>
     <main class="mx-auto max-w-6xl">
       <!-- Main text -->
-      <section class="mt-14">
+      <section class="mt-12">
         <h1
-          class="adhd-text text-5xl leading-[3rem] tracking-wider text-gray-700 md:text-7xl"
+          class="text-6xl font-extrabold uppercase leading-[3rem] tracking-widest text-gray-700 md:text-9xl"
         >
-          ADHD Friendly Website
+          Yale
+        </h1>
+        <h1
+          class="adhd-text text-3xl leading-[3rem] tracking-wider text-gray-700 md:text-5xl"
+        >
+          School of Art
         </h1>
 
         <!-- Tooltip for background-->
@@ -153,10 +152,9 @@
             class="absolute z-50 mt-1 rounded-lg border-2 border-olive-500 bg-white py-4 px-7"
           >
             <p class="mt-3">
-              Having a pastel blue, green or yellow background, with a
-              minimalist layout is the best strategy to make a website
-              accessible. Such a colour palette is easy on the eyes and helps
-              users maintain their focus.
+              This website is an ADHD friendly version of the Yale School of Art
+              website which is notoriously known for its over-complicated design
+              which can be found on this link: https://www.art.yale.edu/.
             </p>
             <button
               x-on:click="selected=null"
@@ -169,16 +167,16 @@
         </div>
         <!-- tooltip end -->
 
-        <div class="mt-20 grid grid-cols-1 gap-20 xl:grid-cols-2">
+        <div class="mt-10 grid grid-cols-1 gap-20 xl:grid-cols-2">
           <div class="relative">
             <p class="adhd-text text-xl leading-[3rem] tracking-wider">
-              Attention deficit/hyperactivity disorder (ADHD) is among the most
-              common neurobehavioral disorders presenting for treatment in
-              children and adolescents. ADHD is often chronic with prominent
-              symptoms and impairment spanning into adulthood. ADHD is often
-              associated with co-occurring disorders including disruptive, mood,
-              anxiety, and substance abuse. The diagnosis of ADHD is clinically
-              established by review of symptoms and impairment.
+              The Yale School of Art is a graduate school that confers MFAs in
+              Graphic Design, Painting/Printmaking, Photography, and Sculpture;
+              and offers undergraduate-level art courses to Yale College
+              students. Our website exists as an ongoing collaborative
+              experiment in digital publishing and information sharing. It
+              functions as a wiki—all members of the School of Art community
+              have the ability to add new, and edit most existing content.
             </p>
 
             <!-- Tooltip for main text-->
@@ -195,22 +193,19 @@
               >
                 <div>
                   <p class="mt-3">
-                    Bionic reading is an effective method for reading and
-                    processing text. This method involves making the first few
-                    letters of a word bold, forcing your brain to fill in the
-                    rest of the word. Those with ADHD often find it hard to
-                    focus on text for prolonged periods of time however, this
-                    method could stimulate users.
-                  </p>
-                  <p>
-                    Standard text should be in size 19, with a maximum of 70
-                    characters per line. The line spacing should be 50% of the
-                    text size. The text colour should be a shade of dark grey
-                    and preferably in the font San Serif. It is essential that
-                    text is well spaced out as studies show that this helps
-                    users with ADHD sustain their attention. The colour dark
-                    grey is less straining on the eye and makes reading large
-                    amounts of text a more pleasurable experience.
+                    On the official website the first block of text is presented
+                    on a neon yellow background and contains an additional
+                    button referred to as the 'editors details.' The text is all
+                    cramped into the left hand-side of the webpage which can be
+                    hard to navigate especially for an individual with ADHD. For
+                    the ADHD friendly version of this website, the text boxes
+                    have been separated, for an ADHD user it is best to only
+                    display the relevant chunks of text one at a time. The
+                    bright distracting yellow background has also been replaced
+                    by a muted green which relaxes the eyes and makes reading
+                    the text a more enjoyable process. The bionic reading method
+                    has also been implemented onto the text so that ADHD users
+                    can focus and read the text with greater ease.
                   </p>
                 </div>
                 <button
@@ -227,7 +222,7 @@
 
           <!-- Image -->
           <div class="relative xl:mt-3">
-            <img class="w-full rounded-md" src="img/meadow.jpg" alt="meadow" />
+            <img class="w-full rounded-md" src="img/main.jpg" alt="lady" />
 
             <!-- Tooltip for image -->
             <div class="absolute left-0 top-0 w-80 sm:w-96">
@@ -277,37 +272,6 @@
               alt="notepad icon"
             />
           </button>
-          <!-- Tooltip for notepad button -->
-          <div class="absolute left-12 top-[5.25rem] w-80 sm:w-96">
-            <button
-              class="duration-150 hover:scale-125"
-              x-on:click="selected !==5 ? selected=5 : selected=null"
-            >
-              <img src="img/question.svg" alt="question-icon" />
-            </button>
-
-            <div
-              x-show="selected===5"
-              class="absolute z-50 mt-1 -translate-x-full rounded-lg border-2 border-olive-500 bg-white py-4 px-7"
-            >
-              <p class="mt-3">
-                The notes feature would allow users to write notes whilst
-                browsing a website. This feature could be particularly useful
-                for websites that contain a lot of important information that
-                needs to be memorised. Studies have shown that people with ADHD
-                tend to have issues with their working memory therefore, having
-                a space where they can make notes is essential.
-              </p>
-              <button
-                x-on:click="selected=null"
-                class="absolute right-2 top-3 flex h-5 w-5 rotate-45 items-center justify-center"
-              >
-                <div class="absolute h-[3px] w-full bg-olive-500"></div>
-                <div class="absolute h-full w-[3px] bg-olive-500"></div>
-              </button>
-            </div>
-          </div>
-          <!-- tooltip end -->
 
           <button class="h-12 w-12 rounded-full bg-yellow-100 p-1">
             <img
@@ -316,37 +280,6 @@
               alt="highlight icon"
             />
           </button>
-          <!-- Tooltip for highlighter button-->
-          <div class="absolute left-12 top-[9.5rem] w-80 sm:w-96">
-            <button
-              class="duration-150 hover:scale-125"
-              x-on:click="selected !==6 ? selected=6 : selected=null"
-            >
-              <img src="img/question.svg" alt="question-icon" />
-            </button>
-            <div
-              x-show="selected===6"
-              class="absolute top-0 z-50 mt-1 -translate-x-full rounded-lg border-2 border-olive-500 bg-white py-4 px-7"
-            >
-              <p class="mt-3 leading-relaxed">
-                Studies have shown that those with ADHD are able to read more
-                efficiently if some parts of a text is highlighted. An article
-                published in the Journal of Abnormal Child Psychology suggested
-                that those with ADHD were able to focus better on a text if it
-                had an element of novelty to it. Hence, implementing a highlight
-                feature would allow users to highlight appropriate areas of text
-                that could then make the text easier to process.
-              </p>
-              <button
-                x-on:click="selected=null"
-                class="absolute right-2 top-3 flex h-5 w-5 rotate-45 items-center justify-center"
-              >
-                <div class="absolute h-[3px] w-full bg-olive-500"></div>
-                <div class="absolute h-full w-[3px] bg-olive-500"></div>
-              </button>
-            </div>
-          </div>
-          <!-- tooltip end -->
 
           <button class="h-12 w-12 rounded-full bg-yellow-100 p-1">
             <img
@@ -355,36 +288,6 @@
               alt="voice over icon"
             />
           </button>
-          <!-- Tooltip for voiceover button -->
-          <div class="absolute top-[13.75rem] left-12 w-80 sm:w-96">
-            <button
-              class="duration-150 hover:scale-125"
-              x-on:click="selected !==7 ? selected=7 : selected=null"
-            >
-              <img src="img/question.svg" alt="question-icon" />
-            </button>
-
-            <div
-              x-show="selected===7"
-              class="absolute z-50 mt-1 -translate-x-full rounded-lg border-2 border-olive-500 bg-white py-4 px-7"
-            >
-              <p class="mt-3">
-                This text-to-speech feature would allow ADHD users to listen to
-                the text that they select. Large chunks of information tend to
-                overwhelm those with ADHD thus, implementing this feature on a
-                website would ensure that the user focuses on the text and
-                enjoys the process.
-              </p>
-              <button
-                x-on:click="selected=null"
-                class="absolute right-2 top-3 flex h-5 w-5 rotate-45 items-center justify-center"
-              >
-                <div class="absolute h-[3px] w-full bg-olive-500"></div>
-                <div class="absolute h-full w-[3px] bg-olive-500"></div>
-              </button>
-            </div>
-          </div>
-          <!-- tooltip end -->
         </div>
         <div
           class="absolute right-2 top-3 flex h-5 w-5 rotate-45 items-center justify-center rounded-full bg-yellow-100"
@@ -407,14 +310,12 @@
             class="absolute z-50 mt-1 -translate-x-full rounded-lg border-2 border-olive-500 bg-white py-4 px-7"
           >
             <p class="mt-3">
-              Instead of having a settings menu that consists of an endless
-              amount of features inside features, a better alternative would be
-              to have the most essential gadgets for an ADHD user ready at their
-              disposal, without having to go down the rabbit hole of trying to
-              figure out the right settings and subsequently getting distracted.
-              Most importantly these icons are intuitive and minimalistic,
-              ensuring that an ADHD user can take advantage of the tools at
-              hand.
+              There is no tool bar on the official website however, a note
+              taking function as well as read aloud button would be very useful
+              for such as website. It contains large paragraphs of information
+              that could instead be read aloud to an ADHD user. Giving the user
+              the opportunity to make notes will also ensure that they can
+              retain important information.
             </p>
             <button
               x-on:click="selected=null"
@@ -433,12 +334,13 @@
           :class="notepadOpen ? '' : 'hidden'"
         >
           <div
-            class="relative h-fit w-full rounded-lg bg-olive-200 px-8 py-10 sm:w-64"
+            class="relative h-fit w-full rounded-lg bg-olive-200 px-8 py-10 sm:w-72"
           >
             <div class="border-[1px] border-gray-500 bg-yellow-100 px-6 py-3">
               <p class="adhd-text text-xl leading-[3rem] tracking-wider">
-                Dedicate a a section for note taking so the user can write their
-                thoughts whilst reading the text.
+                The Yale Arts Apprenticeship Program is an initiative that
+                connects Yale undergraduates with professional arts
+                practitioners of any discipline
               </p>
             </div>
             <button
@@ -477,13 +379,9 @@
               class="absolute left-10 z-50 mt-1 -translate-y-full rounded-lg border-2 border-olive-500 bg-white py-4 px-7"
             >
               <p class="mt-3">
-                If a website requires that a user moves from one page to another
-                it would prove to be useful to add a prompt bar, reminding the
-                user of what they observed on their previous page. It is well
-                established that individuals with ADHD often struggle with their
-                working memory, which is essentially the short term storage of
-                information. Thus, adding this small reminder could ease their
-                navigation of the website.
+                The official website does not contain a reminder pop up. For a
+                dense website with so many sub-pages a reminder button would be
+                very useful for an ADHD user who can be prone to forgetfulness.
               </p>
               <button
                 x-on:click="selected=null"
